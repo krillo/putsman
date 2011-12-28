@@ -1,15 +1,11 @@
 <?php
 /*
-  Template Name: frontpage
+  Template Name: Frontpage
  */
 get_header();
 ?>
 
-<div id="section" class="grid_12 ">
-</div>
-<section class="grid_12" id="carousel">
-  <img src="<?php bloginfo('template_directory'); ?>/img/img1.png" alt="vi putsar fönster" />
-</section>
+
 <section class="grid_12" id="testimonial">
   <h4>Vad säger kunderna</h4>
 </section>

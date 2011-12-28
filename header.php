@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> style="">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="<?php bloginfo('charset'); ?>" />
@@ -22,24 +22,6 @@
 
     <style type="text/css" media="all">
       body{background-color: #fff;}
-      /*
-      .container_12 {
-        background:#000 url(< ?php bloginfo('template_directory'); ?>/img/960_12_10_10_X.png) repeat-y scroll 30px 0;
-        margin-bottom:20px;
-        margin-top: 20px;
-        padding-left: 30px;
-        width: 990px;
-      }
-      */
-      /*      p {
-              overflow:hidden;
-              padding:10px 0;
-              text-align:left;
-            } */
-      /*
-            .box{background-color: lightblue;height: 50px; margin-bottom: 10px;}
-            .extra{height:200px;}
-      */
     </style>
     <!--[if IE]>
       <script src="http://ajax.cdnjs.com/ajax/libs/modernizr/1.7/modernizr-1.7.min.js"></script>
@@ -52,40 +34,44 @@
         // Gör något.
       });
     </script>
-
   </head>
+        <?php
+        if(is_page('start')){
+          $extra = 'style="height:620px;"';
+        }else {
+          $extra = '';
+        } ?>
 
   <body <?php body_class(); ?>>
-    <!--div id="page"  -->
-
-    <div id="wide-header">
+    <div id="wide-header" <?php echo $extra; ?> >
       <div class="center">
-      <header >
-        <hgroup class="">
-          <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>" style="float:left;"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="putsman" /></a>
-          <h1 id="logoh1"><?php bloginfo('name'); ?></h1>
-          <!-- div style="float:right;">sök</div-->
-        </hgroup>
-        <nav class="">
-          <?php wp_nav_menu('sort_column=menu_order'); ?>
-        </nav>
-        <div class="clear"></div>
-      </header>
-    </div>
-</div>
-    <div class="vit"></div>
+        <header id="header-area">
+          <hgroup class="">
+            <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>" style="float:left;"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="putsman" /></a>
+            <h1 id="logoh1"><?php bloginfo('name'); ?></h1>
+            <!-- div style="float:right;">sök</div-->
+          </hgroup>
+          <nav class="">
+            <?php wp_nav_menu('sort_column=menu_order'); ?>
+          </nav>
+          <div class="clear"></div>
+        </header>
+        <?php if (is_page('start')) { ?>
+          <section  id="carousel">
+            <img src="<?php bloginfo('template_directory'); ?>/img/img1.png" alt="vi putsar fönster" />
+          </section>
+          </div>
+          </div>
+        <?php } else { ?>
+          </div>
+          </div>
+        <?php } ?>
+
+       <div class="container_12">
+        <div id="section" class="grid_12 ">
 
 
 
-    <div class="container_12">
-    <header class="grid_12" id="header-area">
-      <hgroup class="grid_7 alpha">
-        <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>" style="float:left;"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="putsman" /></a>
-        <h1 id="logoh1"><?php bloginfo('name'); ?></h1>
-        <!-- div style="float:right;">sök</div-->
-      </hgroup>
-      <nav class="grid_5 omega">
-        <?php wp_nav_menu('sort_column=menu_order'); ?>
-      </nav>
-      <div class="clear"></div>
-    </header>
+
+
+

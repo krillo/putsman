@@ -48,7 +48,7 @@ remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 //---------------------------------------------------------------------------------
 //	Lägg till Google Analytics i footern, ändra UA-XXXXX-X till din egen tracking-kod
 //---------------------------------------------------------------------------------
-
+/*
 function add_google_analytics() {
   echo '<script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>';
   echo '<script type="text/javascript">';
@@ -58,7 +58,7 @@ function add_google_analytics() {
 }
 
 add_action('wp_footer', 'add_google_analytics');
-
+*/
 
 
 //custom post type
