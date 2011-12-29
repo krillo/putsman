@@ -35,40 +35,49 @@
       });
     </script>
   </head>
-        <?php
-        if(is_page('start')){
-          $extra = 'style="height:620px;"';
-        }else {
-          $extra = '';
-        } ?>
+  <?php
+    if (is_page('start')) {
+      $extra = 'style="height:620px;"';
+    } else {
+      $extra = '';
+    } ?>
 
-  <body <?php body_class(); ?>>
-    <div id="wide-header" <?php echo $extra; ?> >
-      <div class="center">
-        <header id="header-area">
-          <hgroup class="">
-            <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>" style="float:left;"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="putsman" /></a>
-            <h1 id="logoh1"><?php bloginfo('name'); ?></h1>
-            <!-- div style="float:right;">sök</div-->
-          </hgroup>
-          <nav class="">
+    <body <?php body_class(); ?>>
+      <div id="wide-header" <?php echo $extra; ?> >
+        <div class="center">
+          <header id="header-area">
+            <hgroup class="">
+              <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>" style="float:left;"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="putsman" /></a>
+              <h1 id="logoh1"><?php bloginfo('name'); ?></h1>
+              <!-- div style="float:right;">sök</div-->
+            </hgroup>
+            <nav class="">
             <?php wp_nav_menu('sort_column=menu_order'); ?>
           </nav>
           <div class="clear"></div>
         </header>
         <?php if (is_page('start')) { ?>
-          <section  id="carousel">
-            <img src="<?php bloginfo('template_directory'); ?>/img/img1.png" alt="vi putsar fönster" />
-          </section>
-          </div>
-          </div>
-        <?php } else { ?>
-          </div>
-          </div>
-        <?php } ?>
 
-       <div class="container_12">
-        <div id="section" class="grid_12 ">
+          <section  id="carousel">
+            <ul id="bigcarousel" class="jcarousel-skin-putsman">
+              <?php
+              $args = array('post_type' => 'splash-images', 'posts_per_page' => 3);
+              $loop = new WP_Query($args);
+              while ($loop->have_posts()) : $loop->the_post();
+                $img = get_the_post_thumbnail();
+                echo '<li><a href="http://boyhappy.se">' . $img . '</a></li>';
+              endwhile; ?>
+            </ul>
+          </section>
+        </div>
+      </div>
+<?php } else { ?>
+              </div>
+            </div>
+<?php } ?>
+
+<div class="container_12">
+  <div id="section" class="grid_12 ">
 
 
 

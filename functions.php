@@ -5,6 +5,7 @@
 //---------------------------------------------------------------------------------
 
 add_theme_support('menus');
+add_theme_support('post-thumbnails'); //to be able to use "get_the_post_thumbnail"
 
 
 //---------------------------------------------------------------------------------
@@ -49,16 +50,16 @@ remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 //	Lägg till Google Analytics i footern, ändra UA-XXXXX-X till din egen tracking-kod
 //---------------------------------------------------------------------------------
 /*
-function add_google_analytics() {
+  function add_google_analytics() {
   echo '<script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>';
   echo '<script type="text/javascript">';
   echo 'var pageTracker = _gat._getTracker("UA-XXXXX-X");';
   echo 'pageTracker._trackPageview();';
   echo '</script>';
-}
+  }
 
-add_action('wp_footer', 'add_google_analytics');
-*/
+  add_action('wp_footer', 'add_google_analytics');
+ */
 
 
 //custom post type
@@ -75,7 +76,6 @@ function create_post_type() {
               'has_archive' => true,
           )
   );
-
   register_post_type('field-images',
           array(
               'labels' => array(
@@ -86,12 +86,51 @@ function create_post_type() {
               'has_archive' => true,
           )
   );
+  register_post_type('citat',
+          array(
+              'labels' => array(
+                  'name' => __('citat'),
+                  'singular_name' => __('citat')
+              ),
+              'public' => true,
+              'has_archive' => false,
+          )
+  );
+  register_post_type('splash-images',
+          array(
+              'labels' => array(
+                  'name' => __('splash-images'),
+                  'singular_name' => __('splash-image')
+              ),
+              'public' => true,
+              'has_archive' => false,
+              'supports' => array('title', 'thumbnail'),
+          )
+  );
 }
 
-//enqueue scripts
+
+/**
+ * Enqueue some java scripts
+ */
 function load_scripts() {
+  wp_deregister_script('jquery');
+  wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js');
+  wp_enqueue_script('jquery');
   wp_register_script('lightbox', get_bloginfo('template_url') . '/js/jquery.lightbox-0.5.js');
   wp_enqueue_script('lightbox');
+ 
+  if (is_page('start')) {
+    wp_register_script('jcarousel', get_bloginfo('template_url') . '/js/jquery.jcarousel.min.js');
+    wp_enqueue_script('jcarousel');
+    wp_register_script('bigcarousel', get_bloginfo('template_url') . '/js/jquery.jcarousel.bigcarousel.js');
+    wp_enqueue_script('bigcarousel');
+  }
 }
 
 add_action('wp_enqueue_scripts', 'load_scripts');
+
+
+
+
+

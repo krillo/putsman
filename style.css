@@ -150,26 +150,29 @@ body{background-color: #fff;}
 #wide-header{float:left;height:70px;padding-top:30px;background:#000;width:100%;}
 .center{margin-left: auto;margin-right: auto;width:960px; padding-left: 10px;}
 hgroup{width:610px;float:left;}
-#header-area{float:left;width:940px;background:#000;padding-left:5px;}
+#header-area{float:left;width:940px;background:#000;padding-left:10px;}
 nav{float:left; width:320px;height: 70px;}
 #logoh1{text-indent: -9999px;visibility:none;}
-#carousel{height:550px;background-color:#000;padding-left: 20px;}
-
-
-
-
-
+#carousel{width:940px;height:550px;background-color:#000;overflow:hidden;float:left;margin-left: 15px;}
+#carousel li{margin:0;}
+#next{background: url('img/next-horizontal.png') no-repeat}
+#prev{background: url('img/prev-horizontal.png') no-repeat}
 
 
 .container_12 {background:#fff;margin-bottom:20px;}
-
 
 .menu{color:#fff;font-size:18px;text-transform:uppercase;}
 .menu li{float:left;}
 .menu li a{color:#fff;text-decoration:none;}
 
 #smallheading{height:45px;}
-#testimonial{height:230px;background-color:#fff;border-bottom:solid #000 6px;}
+#testimonial{height:230px;background-color:#fff;border-bottom:solid #000 6px; overflow:hidden;}
+#testimonial li{margin-right:10px;margin-left:0;}
+/*
+#carousel{width:940px;height:550px;background-color:#000;overflow:hidden;float:left;margin-left: 15px;}
+#carousel li{margin:0;}
+*/
+
 #whoarewe{height:350px;background-color:#fff;border-bottom:solid #000 6px;}
 .whoarewebox{height:300px;margin-bottom:10px;font-family:helvetica;font-size:18px;}
 .whoarewebox h2{font-family:BebasNeue;font-size:30px;}
@@ -179,16 +182,32 @@ nav{float:left; width:320px;height: 70px;}
 .readmorebox h3{float:left; padding-left: 18px;font-size: 20px;color:#000;}
 .readmorebox a{text-decoration: none;}
 #readmore{width:200px;height:30px;background-color:#000;color:#fff;padding-top: 14px; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 170px 13px;}
-#contact{height:400px; background:#fff url('img/form.png') no-repeat 0px 85px;}
-#contact h2{font-family:BebasNeue;font-size:30px;margin-top: 25px;}
+a:hover #readmore{background:#000 url('img/arrow.png') no-repeat 165px 13px;}
+#contact{height:400px; }
+#contact h2{font-family:BebasNeue;font-size:30px;margin-top: 25px; margin-bottom: 25px;}
 #contact a{text-decoration: none;}
-#send{position:relative;top:250px;left:770px;width:150px;height:30px;background-color:#000;color:#fff;padding-top: 14px; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 120px 13px;}
+/*#contact div{width:940px;height:205px;float:left;}*/
+.contact-text{width:460px;float:left;}
+.contact-textarea{width:460px;float:left;margin-left: 20px;}
+#contact input{float:left;}
+#send{} /*position:relative;top:250px;left:770px;width:150px;height:30px;background-color:#000;color:#fff;padding-top: 14px; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 120px 13px;} */
+#send input[type="submit"]{position:relative;top:20px;left:790px;width:150px;height:45px;background-color:#000;color:#fff;
+                           padding-top: 0; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 100px 13px;border:none;
+                           font-family:	BebasNeue,'Helvetica',sans-serif;font-size:	18px;text-align: left;}
+#contact div.wpcf7-response-output {margin: 0;padding: 0.2em 1em;width: 700px;}
+
+a:hover #send{background:#000 url('img/arrow.png') no-repeat 115px 13px;}
 #interest{height:200px;background:#fff url('img/sky.png') no-repeat;}
 #interest h3{padding-top:28px;padding-left:30px;}
 #interest div{color:#fff;padding-left:30px;width: 650px;}
 #interest a{padding: 25px 20px 20px 20px;position:relative;top:-55px;left:810px;}
+#interest a:hover{padding-left: 15px;}
 
-input{color:#000;}
+input{color: #616161;}
+input[type="text"] {width: 440px;height: 50px;background-color: #EAEAEA;border: medium none;margin-bottom: 8px;padding-left: 20px; font-family: helvetica; font-size: 18px;}
+textarea{width: 440px;height: 156px;background-color: #EAEAEA;border: medium none;margin-bottom: 8px;padding-left: 20px;padding-top: 15px; font-family: helvetica; font-size: 18px;}
+
+
 
 /*about us*/
 #employee-img-area {background-color: #fff;height: 550px;background:#fff url('img/putsman_personal.jpg') no-repeat}
