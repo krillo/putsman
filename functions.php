@@ -73,7 +73,8 @@ function create_post_type() {
                   'singular_name' => __('whoarewe')
               ),
               'public' => true,
-              'has_archive' => true,
+              'has_archive' => false,
+              'supports' => array('title', 'editor', 'thumbnail'),
           )
   );
   register_post_type('field-images',
@@ -83,7 +84,7 @@ function create_post_type() {
                   'singular_name' => __('field-image')
               ),
               'public' => true,
-              'has_archive' => true,
+              'has_archive' => false,
           )
   );
   register_post_type('citat',
@@ -105,6 +106,16 @@ function create_post_type() {
               'public' => true,
               'has_archive' => false,
               'supports' => array('title', 'thumbnail'),
+          )
+  );
+  register_post_type('visitkort',
+          array(
+              'labels' => array(
+                  'name' => __('visitkort'),
+                  'singular_name' => __('visitkort')
+              ),
+              'public' => true,
+              'has_archive' => false,
           )
   );
 }

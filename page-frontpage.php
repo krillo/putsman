@@ -40,10 +40,16 @@ get_header();
         $extra = '';
         break;
     }
+    $link = get_field('pufflink');
+    $title = get_the_title();
+    $img = get_the_post_thumbnail();
+    $content = get_the_content();
   ?>
     <section class="grid_4 whoarewebox <?php echo $extra; ?>">
-    <?php the_content(); ?>
-  </section>
+      <a href="<?php echo $link; ?>"><?php echo $img ?></a>
+      <h2><a href="<?php echo $link; ?>"><?php echo $title ?></a></h2>
+      <a href="<?php echo $link; ?>"><?php echo $content ?></a>
+    </section>
   <?php $i++;
   endwhile; ?>
 </section>

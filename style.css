@@ -175,7 +175,10 @@ nav{float:left; width:320px;height: 70px;}
 
 #whoarewe{height:350px;background-color:#fff;border-bottom:solid #000 6px;}
 .whoarewebox{height:300px;margin-bottom:10px;font-family:helvetica;font-size:18px;}
-.whoarewebox h2{font-family:BebasNeue;font-size:30px;}
+.whoarewebox h2{font-family:BebasNeue;font-size:30px;text-decoration:none;}
+.whoarewebox h2 a{text-decoration:none;color:#000;}
+.whoarewebox a{text-decoration:none;color:#505050;}
+
 #readmoresection{height:100px;padding-top:20px;border-bottom:solid #000 6px;background-color: #fff;}
 .readmorebox{height:100px;}
 .readmorebox img{float:left;}
@@ -183,7 +186,7 @@ nav{float:left; width:320px;height: 70px;}
 .readmorebox a{text-decoration: none;}
 #readmore{width:200px;height:30px;background-color:#000;color:#fff;padding-top: 14px; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 170px 13px;}
 a:hover #readmore{background:#000 url('img/arrow.png') no-repeat 165px 13px;}
-#contact{height:400px; }
+#contact{height:390px; }
 #contact h2{font-family:BebasNeue;font-size:30px;margin-top: 25px; margin-bottom: 25px;}
 #contact a{text-decoration: none;}
 /*#contact div{width:940px;height:205px;float:left;}*/
@@ -194,6 +197,7 @@ a:hover #readmore{background:#000 url('img/arrow.png') no-repeat 165px 13px;}
 #send input[type="submit"]{position:relative;top:20px;left:790px;width:150px;height:45px;background-color:#000;color:#fff;
                            padding-top: 0; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 100px 13px;border:none;
                            font-family:	BebasNeue,'Helvetica',sans-serif;font-size:	18px;text-align: left;}
+#send input[type="submit"]:hover{background:#000 url('img/arrow.png') no-repeat 95px 13px;}
 #contact div.wpcf7-response-output {margin: 0;padding: 0.2em 1em;width: 700px;}
 
 a:hover #send{background:#000 url('img/arrow.png') no-repeat 115px 13px;}
@@ -215,6 +219,25 @@ textarea{width: 440px;height: 156px;background-color: #EAEAEA;border: medium non
 #employee-img-text{font-size: 18px;font-family:Helvetica; color: #FFF;text-transform:lowercase; font-weight:100;}
 #fieldimages{border-top:solid #000 6px;}
 
+
+/*kontakt.*/
+#form-area{float:left;height:520px;margin-top: 60px;}
+#form-area h1{color:#000;font-size: 30px;font-family: BebasNeue;}
+#form-area input[type="text"]{width:520px;}
+#form-area textarea{width:520px;}
+#form-area .contact-textarea{margin-left:0;}
+#form-send{height: 380px;}
+#form-send input[type="submit"]{position:relative;top:20px;left:390px;width:150px;height:45px;background-color:#000;color:#fff;
+                           padding-top: 0; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 100px 13px;border:none;
+                           font-family:	BebasNeue,'Helvetica',sans-serif;font-size:	18px;text-align: left;}
+#form-send input[type="submit"]:hover{background:#000 url('img/arrow.png') no-repeat 95px 13px;}
+#form-area div.wpcf7-response-output {margin: 0;padding: 0.2em 1em;width: 325px;}
+
+
+#contact-devider{float:left;background-color: #ccc;}
+#contact-info{float:left;margin-top: 60px;background-color: #ccc;}
+.contact-info-box{border-top:solid #000 6px;padding: 40px 0 0 10px;}
+.contact-info-box h2{font-family:	BebasNeue,'Helvetica',sans-serif;font-size:	18px;}
 
 /*footer*/
 #wide-footer{float:left;background:#343635;width:100%;}
