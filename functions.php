@@ -139,7 +139,7 @@ function load_scripts() {
   if (is_page('start')) {
     wp_register_script('jcarousel', get_bloginfo('template_url') . '/js/jquery.jcarousel.min.js');
     wp_enqueue_script('jcarousel');
-    wp_register_script('bigcarousel', get_bloginfo('template_url') . '/js/jquery.jcarousel.bigcarousel.js');
+    wp_register_script('bigcarousel', get_bloginfo('template_url') . '/js/jquery.jcarousel.putsman.js');
     wp_enqueue_script('bigcarousel');
   }
 }
