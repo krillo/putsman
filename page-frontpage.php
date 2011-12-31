@@ -91,10 +91,5 @@ get_header();
   endwhile;
   ?>
 </section>
-<section class="grid_12" id="interest">
-  <h3>GÖR EN INTRESSEANMÄLAN</h3>
-  <div>Låt oss få en tydligare bild på vad ni behöver. Berätta om ert företag eller boende, vilken typ av fönster ni har och om ni är intresserade av ett årsavtal.</div>
-  <a href="intresseanmalan"><img src="<?php bloginfo('template_directory'); ?>/img/arrow2.png" alt="till intresseanmälan" /></a>
-</section>
-
+<?php include 'inc_interest.php'; ?>
 <?php get_footer(); ?>

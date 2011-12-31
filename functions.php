@@ -22,17 +22,6 @@ if (function_exists('register_sidebar'))
 
 
 //---------------------------------------------------------------------------------
-//	Inkludera jQuery från Google
-//---------------------------------------------------------------------------------
-
-if (!is_admin()) {
-  wp_deregister_script('jquery');
-  wp_register_script('jquery', ("https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"), false);
-  wp_enqueue_script('jquery');
-}
-
-
-//---------------------------------------------------------------------------------
 //	Ta bort blandat skräp från head
 //---------------------------------------------------------------------------------
 
@@ -85,6 +74,7 @@ function create_post_type() {
               ),
               'public' => true,
               'has_archive' => false,
+              'supports' => array('title', 'thumbnail'),
           )
   );
   register_post_type('citat',
@@ -118,6 +108,21 @@ function create_post_type() {
               'has_archive' => false,
           )
   );
+  register_post_type('interest-text',
+          array(
+              'labels' => array(
+                  'name' => __('intresseanmälan-text'),
+                  'singular_name' => __('intresseanmälan-text')
+              ),
+              'public' => true,
+              'has_archive' => false,
+          )
+  );
+}
+
+
+if (function_exists('add_image_size')) {
+  add_image_size('field-img', 220, 220, true); //(cropped)
 }
 
 

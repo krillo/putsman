@@ -144,16 +144,16 @@ p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset {margin-bottom: 10px;
 /*  2.  Document - Add your own CSS here
 /*---------------------------------------------------------------------------------*/
 body{background-color: #fff;}
-#page{width: 990px; min-width:990px;background-color: #000;margin-left: auto;margin-right: auto;}
+/*#page{width: 990px; min-width:990px;background-color: #000;margin-left: auto;margin-right: auto;} */
 
 
 #wide-header{float:left;height:70px;padding-top:30px;background:#000;width:100%;}
-.center{margin-left: auto;margin-right: auto;width:960px; padding-left: 10px;}
+.center{margin-left: auto;margin-right: auto;width:960px;}
 hgroup{width:610px;float:left;}
-#header-area{float:left;width:940px;background:#000;padding-left:10px;}
+#header-area{float:left;width:940px;background:#000;margin-left:10px;}
 nav{float:left; width:320px;height: 70px;}
 #logoh1{text-indent: -9999px;visibility:none;}
-#carousel{width:940px;height:550px;background-color:#000;overflow:hidden;float:left;margin-left: 15px;}
+#carousel{width:940px;height:550px;background-color:#000;overflow:hidden;float:left;margin-left:10px;}
 #carousel li{margin:0;}
 #next{background: url('img/next-horizontal.png') no-repeat}
 #prev{background: url('img/prev-horizontal.png') no-repeat}
@@ -166,14 +166,14 @@ nav{float:left; width:320px;height: 70px;}
 .menu li a{color:#fff;text-decoration:none;}
 
 #smallheading{height:45px;}
-#testimonial{height:230px;background-color:#fff;border-bottom:solid #000 6px; overflow:hidden;}
+#testimonial{height:230px;border-bottom:solid #000 6px; overflow:hidden;}
 #testimonial li{margin-right:10px;margin-left:0;}
 /*
 #carousel{width:940px;height:550px;background-color:#000;overflow:hidden;float:left;margin-left: 15px;}
 #carousel li{margin:0;}
 */
 
-#whoarewe{height:350px;background-color:#fff;border-bottom:solid #000 6px;}
+#whoarewe{height:350px;;border-bottom:solid #000 6px;}
 .whoarewebox{height:300px;margin-bottom:10px;font-family:helvetica;font-size:18px;}
 .whoarewebox h2{font-family:BebasNeue;font-size:30px;text-decoration:none;}
 .whoarewebox h2 a{text-decoration:none;color:#000;}
@@ -204,7 +204,7 @@ a:hover #send{background:#000 url('img/arrow.png') no-repeat 115px 13px;}
 #interest{height:200px;background:#fff url('img/sky.png') no-repeat;}
 #interest h3{padding-top:28px;padding-left:30px;}
 #interest div{color:#fff;padding-left:30px;width: 650px;}
-#interest a{padding: 25px 20px 20px 20px;position:relative;top:-55px;left:810px;}
+#interest a{padding: 25px 20px 20px 20px;position:relative;top:-60px;left:740px;}
 #interest a:hover{padding-left: 15px;}
 
 input{color: #616161;}
@@ -217,7 +217,16 @@ textarea{width: 440px;height: 156px;background-color: #EAEAEA;border: medium non
 #employee-img-area {background-color: #fff;height: 550px;background:#fff url('img/putsman_personal.jpg') no-repeat}
 #employee-img-heading{position:relative;top:410px;left:45px;width:500px;font-size: 60px;font-family: BebasNeue;color: #FFF;text-transform: uppercase;font-weight:100;}
 #employee-img-text{font-size: 18px;font-family:Helvetica; color: #FFF;text-transform:lowercase; font-weight:100;}
-#fieldimages{border-top:solid #000 6px;}
+#fieldimages{border-top:solid #000 6px;margin-bottom: 30px;}
+.field-img-box{margin-bottom: 20px;}
+/*
+#whoarewe{height:350px;;border-bottom:solid #000 6px;}
+.whoarewebox{height:300px;margin-bottom:10px;font-family:helvetica;font-size:18px;}
+.whoarewebox h2{font-family:BebasNeue;font-size:30px;text-decoration:none;}
+.whoarewebox h2 a{text-decoration:none;color:#000;}
+.whoarewebox a{text-decoration:none;color:#505050;}
+*/
+
 
 
 /*kontakt.*/
@@ -233,11 +242,14 @@ textarea{width: 440px;height: 156px;background-color: #EAEAEA;border: medium non
 #form-send input[type="submit"]:hover{background:#000 url('img/arrow.png') no-repeat 95px 13px;}
 #form-area div.wpcf7-response-output {margin: 0;padding: 0.2em 1em;width: 325px;}
 
-
-#contact-devider{float:left;background-color: #ccc;}
-#contact-info{float:left;margin-top: 60px;background-color: #ccc;}
+#contact-devider{float:left;height:500px;}
+#contact-info{float:left;margin-top: 110px;}
+#contact-info div{font-family: helvetica; font-size: 16px;text-transform: lowercase;}
 .contact-info-box{border-top:solid #000 6px;padding: 40px 0 0 10px;}
 .contact-info-box h2{font-family:	BebasNeue,'Helvetica',sans-serif;font-size:	18px;}
+.contact-info-phone{height:30px;padding-left:70px;background:#fff url('img/telefon_svart.png') no-repeat 10px 3px;}
+.contact-info-email{height:30px;padding-left:70px;margin-bottom: 35px;background:#fff url('img/vykort_svart.png') no-repeat 10px 3px;}
+.contact-info-email a{text-decoration: none;color:#000;}
 
 /*footer*/
 #wide-footer{float:left;background:#343635;width:100%;}

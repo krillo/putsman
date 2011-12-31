@@ -15,14 +15,16 @@
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/css/grid.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.4.css" media="screen" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_directory'); ?>/css/jquery.lightbox-0.5.css" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 
 
     <style type="text/css" media="all">
       body{background-color: #fff;}
-    </style>
+      /*show the grid*/
+      /* .container_12 {background:#000 url(<?php bloginfo('template_url'); ?>/img/960_12_10_10_X.png) repeat-y scroll 0 0;height:2000px;z-index: 20;} */
+     </style>
     <!--[if IE]>
       <script src="http://ajax.cdnjs.com/ajax/libs/modernizr/1.7/modernizr-1.7.min.js"></script>
     <![endif]-->
@@ -65,7 +67,8 @@
               $loop = new WP_Query($args);
               while ($loop->have_posts()) : $loop->the_post();
                 $img = get_the_post_thumbnail();
-                echo '<li><a href="http://boyhappy.se">' . $img . '</a></li>';
+                $link = get_field('link');
+                echo '<li><a href="' . $link . '">' . $img . '</a></li>';
               endwhile; ?>
             </ul>
           </section>
@@ -77,7 +80,7 @@
 <?php } ?>
 
 <div class="container_12">
-  <div id="section" class="grid_12 ">
+  <!--div id="section" class="grid_12 "-->
 
 
 
