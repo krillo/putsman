@@ -282,10 +282,10 @@ textarea{width: 440px;height: 156px;background-color: #EAEAEA;border: medium non
 #wide-footer{float:left;background:#343635;width:100%;}
 #footer-devider{float:left;background-color:#262626;height:65px;width:100%;}
 #footer{background-color:#343635;height:180px;width:960px;}
-#like{padding-top:28px;padding-left:30px;}
-address{padding-top:28px;padding-left:85px;color:#fff;font-style: normal;width:540px;}
-#phone{float:left;height:25px;margin-bottom:10px;width:480px;}
-.address-data{font-family: BergamoStd, serif;font-size:20px;padding:4px 0 0 10px;width:430px;float: left;}
+#like{padding-top:28px;padding-left:30px;width:400px;float:left;}
+address{padding-top:28px;padding-left:0px;color:#fff;font-style: normal;width:460px;float:left;}
+#phone{float:left;height:25px;margin-bottom:10px;width:460px;}
+.address-data{font-family: BergamoStd, serif;font-size:20px;padding:4px 0 0 10px;width:400px;float: left;}
 .address-data a{color:#fff;text-decoration: none;}
 #phone img, #email img{float:left;}
 

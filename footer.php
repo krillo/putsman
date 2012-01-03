@@ -13,9 +13,7 @@
 	<footer id="footer" class="">
     <div id="like" class="grid_5">
       <h3>GILLA OSS OCH KOM NÄRMRE</h3>
-      <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.putsman.se%2F&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=dark&amp;font&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
-
-
+      <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.putsman.se%2F&amp;send=false&amp;layout=standard&amp;width=400&amp;show_faces=true&amp;action=like&amp;colorscheme=dark&amp;font&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:80px;" allowTransparency="true"></iframe>
     </div>
     <div class="grid_1"></div>
     <address class="grid_6">
