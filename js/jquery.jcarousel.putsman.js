@@ -24,8 +24,8 @@ jQuery(document).ready(function() {
         auto: 2,
         scroll: 1,
         wrap: 'circular',
-        buttonPrevHTML: '<div id="prev" style="position:relative; top:-300px; width:50px; height:60px;"></div>',
-        buttonNextHTML: '<div id="next" style="position:relative; top:-360px;left:890px; width:50px; height:60px;"></div>',
+        buttonPrevHTML: '<div id="prev" ></div>',
+        buttonNextHTML: '<div id="next" ></div>',
         initCallback: bigcarousel_initCallback
     });
 });
@@ -52,8 +52,9 @@ function testimonialcarousel_initCallback(carousel){
 
 jQuery(document).ready(function() {
     jQuery('#testimonial-carousel').jcarousel({
-        auto: 5,
+        auto: 6,
         scroll: 1,
+        vertical: true,
         wrap: 'circular',
         initCallback: testimonialcarousel_initCallback
     });

@@ -155,9 +155,10 @@ nav{float:left; width:320px;height: 70px;}
 #logoh1{text-indent: -9999px;visibility:none;}
 #carousel{width:940px;height:550px;background-color:#000;overflow:hidden;float:left;margin-left:10px;}
 #carousel li{margin:0;}
-#next{background: url('img/next-horizontal.png') no-repeat}
-#prev{background: url('img/prev-horizontal.png') no-repeat}
-
+#next{background: url('img/next-horizontal.png') no-repeat;position:relative; top:-360px;left:890px; width:50px; height:60px;display:none;}
+#prev{background: url('img/prev-horizontal.png') no-repeat;position:relative; top:-300px; width:50px; height:60px;display:none;}
+/*#next:hover{display:none;}
+#prev:hover{display:block;}*/
 
 .container_12 {background:#fff;margin-bottom:20px;}
 
@@ -166,8 +167,11 @@ nav{float:left; width:320px;height: 70px;}
 .menu li a{color:#fff;text-decoration:none;}
 
 #smallheading{height:45px;}
-#testimonial{height:230px;border-bottom:solid #000 6px; overflow:hidden;}
-#testimonial li{margin-right:10px;margin-left:0;}
+#testimonial{height:80px;border-bottom:solid #000 6px; overflow:hidden;padding-bottom: 150px;font-family: helvetica; font-size: 30px;}
+
+#testimonial li{margin-right:10px;margin-left:0;height: 190px;width: 620px; text-align: center;}
+#testimonial .jcarousel-container-vertical{height: 190px;}
+#testimonial .jcarousel-clip-horizontal{width: 620px;}
 /*
 #carousel{width:940px;height:550px;background-color:#000;overflow:hidden;float:left;margin-left: 15px;}
 #carousel li{margin:0;}
@@ -250,6 +254,29 @@ textarea{width: 440px;height: 156px;background-color: #EAEAEA;border: medium non
 .contact-info-phone{height:30px;padding-left:70px;background:#fff url('img/telefon_svart.png') no-repeat 10px 3px;}
 .contact-info-email{height:30px;padding-left:70px;margin-bottom: 35px;background:#fff url('img/vykort_svart.png') no-repeat 10px 3px;}
 .contact-info-email a{text-decoration: none;color:#000;}
+
+
+/* intresseanmälan */
+#interest-form input{width:440px;}
+#interest-form section{margin-bottom:50px;}
+#interest-form h1{font-size: 30px;color:#000;font-family: BebasNeue;margin-top: 60px;margin-bottom:50px;}
+#interest-form h2{font-size: 18px;color:#aea332;}
+#interest-form input[type="radio"] , #interest-window input[type="radio"]{width: 20px;height: 20px;background-color: #EAEAEA;border: medium none;}
+#interest-type-home, #interest-window, #interest-annual{font-family: helvetica; font-size: 18px;color:#4c4c4c;}
+#interest-type-home div{margin-right: 50px;float:left;}
+#interest-type-home div input{margin-top: 0;}
+#interest-count img{margin-bottom: 10px;}
+#interest-count input{width: 220px; padding:0;text-align: center;}
+#interest-window img {margin-bottom: 20px;}
+#interest-window div input{margin-top: 0;}
+#interest-form #interest-annual{margin-bottom:40px;}
+#interest-annual input{width:20px;height:20px;}
+#interest-annual-smaller{margin-left: 20px;font-size: 13px;margin-top: 15px;}
+#interest-annual-smaller input{margin-bottom: 11px;}
+#interest-send input[type="submit"]{position:relative;top:0px;left:0;width:150px;height:45px;background-color:#000;color:#fff;
+                           padding-top: 0; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 100px 13px;border:none;
+                           font-family:	BebasNeue,'Helvetica',sans-serif;font-size:	18px;text-align: left;}
+#interest-send input[type="submit"]:hover{background:#000 url('img/arrow.png') no-repeat 95px 13px;}
 
 /*footer*/
 #wide-footer{float:left;background:#343635;width:100%;}
