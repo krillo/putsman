@@ -2,10 +2,7 @@
 /*
   Template Name: contact
  */
-get_header();
-?>
-
-
+get_header(); ?>
 <section class="grid_7" id="form-area">
   <h1>Hör av dig så pratar vi</h1>
    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

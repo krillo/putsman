@@ -43,7 +43,6 @@
     } else {
       $extra = '';
     } ?>
-
     <body <?php body_class(); ?>>
       <div id="wide-header" <?php echo $extra; ?> >
         <div class="center">
@@ -80,10 +79,3 @@
 <?php } ?>
 
 <div class="container_12">
-  <!--div id="section" class="grid_12 "-->
-
-
-
-
-
-

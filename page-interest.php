@@ -45,8 +45,8 @@ get_header();
     <h2>årsavtal</h2>
     <input type="checkbox" name="i-perodiocity1" value="Ja" />Ja tack, jag önskar utvändig fönsterputs en gång var tredje månad<br/>
     <div id="interest-annual-smaller">
-      <input type="checkbox" name="i-perodiocity2" value="Ja" />Jag önskar också invändig fönsterputs en gång om året <br/>
-      <input type="checkbox" name="i-perodiocity3" value="Ja" />Jag önskar också invändig fönsterputs två gånger om året<br/>
+      <input type="checkbox" name="i-perodiocity2" value="Ja" /><span>Jag önskar också invändig fönsterputs en gång om året </span><br/>
+      <input type="checkbox" name="i-perodiocity3" value="Ja" /><span>Jag önskar också invändig fönsterputs två gånger om året</span><br/>
     </div>
   </section>
   <section class="grid_12" id="interest-send">

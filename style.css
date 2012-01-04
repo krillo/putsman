@@ -147,7 +147,7 @@ body{background-color: #fff;}
 /*#page{width: 990px; min-width:990px;background-color: #000;margin-left: auto;margin-right: auto;} */
 
 
-#wide-header{float:left;height:70px;padding-top:30px;background:#000;width:100%;}
+#wide-header{height:70px;padding-top:30px;background:#000;width:100%;}
 .center{margin-left: auto;margin-right: auto;width:960px;}
 hgroup{width:610px;float:left;}
 #header-area{float:left;width:940px;background:#000;margin-left:10px;}
@@ -155,10 +155,12 @@ nav{float:left; width:320px;height: 70px;}
 #logoh1{text-indent: -9999px;visibility:none;}
 #carousel{width:940px;height:550px;background-color:#000;overflow:hidden;float:left;margin-left:10px;}
 #carousel li{margin:0;}
-#next{background: url('img/next-horizontal.png') no-repeat;position:relative; top:-360px;left:890px; width:50px; height:60px;display:none;}
-#prev{background: url('img/prev-horizontal.png') no-repeat;position:relative; top:-300px; width:50px; height:60px;display:none;}
-/*#next:hover{display:none;}
-#prev:hover{display:block;}*/
+#next{width:150px; height:500px;z-index: 10;position:relative; top:-505px;left:640px;float:left;}
+#prev{width:150px; height:500px;z-index: 10;position:relative; top:-505px;float:left;}
+#next:hover{background: url('img/next-horizontal.png') no-repeat; display:block;top:-305px;left:740px;}
+#prev:hover{background: url('img/prev-horizontal.png') no-repeat;display:block;top:-305px;}
+
+
 
 .container_12 {background:#fff;margin-bottom:20px;}
 
@@ -167,7 +169,7 @@ nav{float:left; width:320px;height: 70px;}
 .menu li a{color:#fff;text-decoration:none;}
 
 #smallheading{height:45px;}
-#testimonial{height:80px;border-bottom:solid #000 6px; overflow:hidden;padding-bottom: 150px;font-family: helvetica; font-size: 30px;}
+#testimonial{height:80px;border-bottom:solid #000 6px; overflow:hidden;padding-bottom: 150px;font-family: BergamoStd; font-size: 30px;}
 
 #testimonial li{margin-right:10px;margin-left:0;height: 190px;width: 620px; text-align: center;}
 #testimonial .jcarousel-container-vertical{height: 190px;}
@@ -177,11 +179,13 @@ nav{float:left; width:320px;height: 70px;}
 #carousel li{margin:0;}
 */
 
-#whoarewe{height:350px;;border-bottom:solid #000 6px;}
+#whoarewe{height:350px;}
 .whoarewebox{height:300px;margin-bottom:10px;font-family:helvetica;font-size:18px;}
 .whoarewebox h2{font-family:BebasNeue;font-size:30px;text-decoration:none;}
 .whoarewebox h2 a{text-decoration:none;color:#000;}
 .whoarewebox a{text-decoration:none;color:#505050;}
+.whoarewebox span{color:#505050;}
+
 
 #readmoresection{height:100px;padding-top:20px;border-bottom:solid #000 6px;background-color: #fff;}
 .readmorebox{height:100px;}
@@ -257,7 +261,7 @@ textarea{width: 440px;height: 156px;background-color: #EAEAEA;border: medium non
 
 
 /* intresseanmälan */
-#interest-form input{width:440px;}
+#interest-form input{width:439px;}
 #interest-form section{margin-bottom:50px;}
 #interest-form h1{font-size: 30px;color:#000;font-family: BebasNeue;margin-top: 60px;margin-bottom:50px;}
 #interest-form h2{font-size: 18px;color:#aea332;}
@@ -272,7 +276,8 @@ textarea{width: 440px;height: 156px;background-color: #EAEAEA;border: medium non
 #interest-form #interest-annual{margin-bottom:40px;}
 #interest-annual input{width:20px;height:20px;}
 #interest-annual-smaller{margin-left: 20px;font-size: 13px;margin-top: 15px;}
-#interest-annual-smaller input{margin-bottom: 11px;}
+#interest-annual-smaller span{vertical-align: top;}
+#interest-annual-smaller input{margin-bottom: 11px;margin-top: 0px;}
 #interest-send input[type="submit"]{position:relative;top:0px;left:0;width:150px;height:45px;background-color:#000;color:#fff;
                            padding-top: 0; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 100px 13px;border:none;
                            font-family:	BebasNeue,'Helvetica',sans-serif;font-size:	18px;text-align: left;}

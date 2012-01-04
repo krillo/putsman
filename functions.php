@@ -147,6 +147,17 @@ function load_scripts() {
 add_action('wp_enqueue_scripts', 'load_scripts');
 
 
+/*disable the 28px adminbar on top of all pages*/
+/*
+function remove_admin_bar_style_frontend() {
+  echo '<style type="text/css" media="screen">
+  html { margin-top: 0;}
+  * html body { margin-top: 1px !important; }
+  </style>';
+}
+
+add_filter('wp_head','remove_admin_bar_style_frontend', 99);
 
 
+*/
 
