@@ -14,8 +14,8 @@
     <link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/img/apple-touch-icon.png">
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/css/grid.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_directory'); ?>/css/jquery.lightbox-0.5.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/style.grid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_directory'); ?>/style.jquery.lightbox-0.5.css" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 
@@ -30,12 +30,6 @@
     <![endif]-->
 
     <?php wp_head(); ?>
-
-    <script type="text/javascript">
-      $(function(){
-        // Gör något.
-      });
-    </script>
   </head>
   <?php
     if (is_page('start')) {
