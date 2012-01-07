@@ -128,7 +128,7 @@ a:focus{outline: 1px dotted;}
 hr {border: 0 #ccc solid;border-top-width: 1px;clear: both;height: 0;}
 
 h1 {font-size: 42px;font-family: "Myriad Pro", BebasNeue, Helvetica;color: #FFF;text-transform: uppercase;font-weight:100;}
-h2 {font-size: 30px;font-family: BebasNeue;font-weight:100;}
+h2 {font-size: 30px;font-family: BebasNeue;font-weight:100; margin-top:7px;}
 h3 {font-size: 30px;font-family: BebasNeue;color: #FFF;text-transform: uppercase;font-weight:100;}
 h4 {font-size: 14px;font-family: BebasNeue;color: #a79c22;text-transform: uppercase;font-weight:100;margin-top:22px;}
 h5 {font-size: 17px;}
@@ -162,7 +162,7 @@ nav{float:left; width:320px;height: 70px;}
 
 
 
-.container_12 {background:#fff;margin-bottom:20px;}
+.container_12 {background:#fff;margin-top:30px;margin-bottom:20px;}
 
 .menu{color:#fff;font-size:18px;text-transform:uppercase;}
 .menu li{float:left;}
@@ -192,7 +192,7 @@ nav{float:left; width:320px;height: 70px;}
 .readmorebox img{float:left;}
 .readmorebox h3{float:left; padding-left: 18px;font-size: 20px;color:#000;}
 .readmorebox a{text-decoration: none;}
-#readmore{width:200px;height:30px;background-color:#000;color:#fff;padding-top: 14px; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 170px 13px;}
+#readmore{width:200px;height:30px;background-color:#000;color:#fff;padding-top: 12px; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 170px 13px;}
 a:hover #readmore{background:#000 url('img/arrow.png') no-repeat 165px 13px;}
 #contact{height:390px; }
 #contact h2{font-family:BebasNeue;font-size:30px;margin-top: 25px; margin-bottom: 25px;}
@@ -203,7 +203,7 @@ a:hover #readmore{background:#000 url('img/arrow.png') no-repeat 165px 13px;}
 #contact input{float:left;}
 #send{} /*position:relative;top:250px;left:770px;width:150px;height:30px;background-color:#000;color:#fff;padding-top: 14px; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 120px 13px;} */
 #send input[type="submit"]{position:relative;top:20px;left:790px;width:150px;height:45px;background-color:#000;color:#fff;
-                           padding-top: 0; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 100px 13px;border:none;
+                           padding-top: 5px; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 100px 13px;border:none;
                            font-family:	BebasNeue,'Helvetica',sans-serif;font-size:	18px;text-align: left;}
 #send input[type="submit"]:hover{background:#000 url('img/arrow.png') no-repeat 95px 13px;}
 #contact div.wpcf7-response-output {margin: 0;padding: 0.2em 1em;width: 700px;}
@@ -211,7 +211,7 @@ a:hover #readmore{background:#000 url('img/arrow.png') no-repeat 165px 13px;}
 a:hover #send{background:#000 url('img/arrow.png') no-repeat 115px 13px;}
 #interest{height:200px;background:#fff url('img/sky.png') no-repeat;}
 #interest h3{padding-top:28px;padding-left:30px;}
-#interest div{color:#fff;padding-left:30px;width: 650px;}
+#interest div{font-family:helvetica;color:#fff;padding-left:30px;width: 650px;}
 #interest a{padding: 25px 20px 20px 20px;position:relative;top:-60px;left:740px;}
 #interest a:hover{padding-left: 15px;}
 
@@ -245,18 +245,18 @@ textarea{width: 440px;height: 156px;background-color: #EAEAEA;border: medium non
 #form-area .contact-textarea{margin-left:0;}
 #form-send{height: 380px;}
 #form-send input[type="submit"]{position:relative;top:20px;left:390px;width:150px;height:45px;background-color:#000;color:#fff;
-                           padding-top: 0; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 100px 13px;border:none;
+                           padding-top: 5px; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 100px 13px;border:none;
                            font-family:	BebasNeue,'Helvetica',sans-serif;font-size:	18px;text-align: left;}
 #form-send input[type="submit"]:hover{background:#000 url('img/arrow.png') no-repeat 95px 13px;}
 #form-area div.wpcf7-response-output {margin: 0;padding: 0.2em 1em;width: 325px;}
 
 #contact-devider{float:left;height:500px;}
 #contact-info{float:left;margin-top: 110px;}
-#contact-info div{font-family: helvetica; font-size: 16px;text-transform: lowercase;}
+#contact-info div{font-family: BergamoStd,serif;; font-size: 18px;text-transform: lowercase;}
 .contact-info-box{border-top:solid #000 6px;padding: 40px 0 0 10px;}
 .contact-info-box h2{font-family:	BebasNeue,'Helvetica',sans-serif;font-size:	18px;}
-.contact-info-phone{height:30px;padding-left:70px;background:#fff url('img/telefon_svart.png') no-repeat 10px 3px;}
-.contact-info-email{height:30px;padding-left:70px;margin-bottom: 35px;background:#fff url('img/vykort_svart.png') no-repeat 10px 3px;}
+.contact-info-phone{height:30px;padding-left:70px;padding-top:7px;background:#fff url('img/telefon_svart.png') no-repeat 10px 3px;}
+.contact-info-email{height:30px;padding-left:70px;padding-top:5px;margin-bottom: 35px;background:#fff url('img/vykort_svart.png') no-repeat 10px 3px;}
 .contact-info-email a{text-decoration: none;color:#000;}
 
 
@@ -279,18 +279,18 @@ textarea{width: 440px;height: 156px;background-color: #EAEAEA;border: medium non
 #interest-annual-smaller span{vertical-align: top;}
 #interest-annual-smaller input{margin-bottom: 11px;margin-top: 0px;}
 #interest-send input[type="submit"]{position:relative;top:0px;left:0;width:150px;height:45px;background-color:#000;color:#fff;
-                           padding-top: 0; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 100px 13px;border:none;
+                           padding-top: 5px; padding-left:20px;background:#000 url('img/arrow.png') no-repeat 100px 13px;border:none;
                            font-family:	BebasNeue,'Helvetica',sans-serif;font-size:	18px;text-align: left;}
 #interest-send input[type="submit"]:hover{background:#000 url('img/arrow.png') no-repeat 95px 13px;}
 
 /*footer*/
 #wide-footer{float:left;background:#343635;width:100%;}
 #footer-devider{float:left;background-color:#262626;height:65px;width:100%;}
-#footer{background-color:#343635;height:180px;width:960px;}
-#like{padding-top:28px;padding-left:30px;width:400px;float:left;}
+#footer{background-color:#343635;height:260px;width:960px;}
+#like{padding-top:28px;padding-left:0px;width:460px;float:left;}
 address{padding-top:28px;padding-left:0px;color:#fff;font-style: normal;width:460px;float:left;}
 #phone{float:left;height:25px;margin-bottom:10px;width:460px;}
-.address-data{font-family: BergamoStd, serif;font-size:20px;padding:4px 0 0 10px;width:400px;float: left;}
+.address-data{font-family:BergamoStd,serif;font-size:18px;color:#959595;padding:6px 0 0 10px;width:400px;float: left;}
 .address-data a{color:#fff;text-decoration: none;}
 #phone img, #email img{float:left;}
 

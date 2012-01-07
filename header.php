@@ -62,7 +62,7 @@
           <section  id="carousel">
             <ul id="bigcarousel" class="jcarousel-skin-putsman">
               <?php
-              $args = array('post_type' => 'splash-images', 'posts_per_page' => 3);
+              $args = array('post_type' => 'splash-images');
               $loop = new WP_Query($args);
               while ($loop->have_posts()) : $loop->the_post();
                 $img = get_the_post_thumbnail();
