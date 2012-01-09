@@ -36,9 +36,12 @@ get_header();
     $content = get_the_content();
   ?>
     <section class="grid_4 whoarewebox <?php echo $extra; ?>">
-      <a href="<?php echo $link; ?>"><?php echo $img ?></a>
-      <h2><a href="<?php echo $link; ?>"><?php echo $title ?></a></h2>
-      <a href="<?php echo $link; ?>"><?php echo $content ?></a>
+      <!-- a href="< ?php echo $link; ?>">< ?php echo $img ? ></a>
+      <h2><a href="< ?php echo $link; ?>">< ?php echo $title ? ></a></h2>
+      <a href="< ?php echo $link; ? >">< ?php echo $content ? ></a-->
+      <?php echo $img ?>
+      <h2><?php echo $title ?></h2>
+      <?php echo $content ?>
   </section>
     <?php $i++;
   endwhile; ?>
